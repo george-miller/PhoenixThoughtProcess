@@ -13,6 +13,9 @@ public class TestSuite{
         for (Failure failure : result.getFailures()) {
         	System.out.println(failure.getTestHeader() + " : " + failure.getException());
       	}
+        System.out.println("Results: " + result.getFailureCount() + 
+          " out of " + result.getRunCount() + 
+          " tests failed, in " + result.getRunTime()/1000f + " seconds.");
       	if (result.wasSuccessful()){
       		System.out.println("All Tests Successful!");
       	}
