@@ -22,7 +22,7 @@ public class BasicElementTest {
    }
 
    @Parameterized.Parameters
-   public static Collection primeNumbers() {
+   public static Collection testObjects() {
       return Arrays.asList(new Object[][] {
          { 4 },
          { 5 }
