@@ -6,32 +6,29 @@ import org.junit.Before;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 import org.junit.runner.RunWith;
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
+
+import phoenix.gameplay.BasicElement;
+import javax.swing.DebugGraphics;
 
 @RunWith(Parameterized.class)
 public class BasicElementTest {
-   // For now this is simply an example to make sure everything works
-   private Integer i;
+   private BasicElement element;
 
-   @Before
-   public void initialize() {
-   }
-
-   public BasicElementTest(Integer i) {
-      this.i = i;
+   public BasicElementTest(BasicElement e) {
+      this.element = e;
    }
 
    @Parameterized.Parameters
    public static Collection testObjects() {
       return Arrays.asList(new Object[][] {
-         { 4 },
-         { 5 }
+         { new Object() }
       });
    }
 
    @Test
-   public void testExample(){
-      assertEquals(i, new Integer(5));
+   public void testDraw(){
+      
    }
 
 }
