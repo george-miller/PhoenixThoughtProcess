@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.1.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>260</x>
+      <y>260</y>
+      <w>280</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Data Facade
+--
+/getLevel (int) : Level/
+/importLevel (int, Level) : void/
+/getSaveData () : SaveData/
+/importSaveData (SaveData) : void/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>60</x>
+      <y>430</y>
+      <w>370</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Meta File Repo
+--
+/getLevelMap (int) : Map&lt;String, Object&gt;/
+/importLevelMap (int, Map&lt;String, Object&gt;) : void/
+/getSaveMap () : Map&lt;String, Object&gt;/
+/importSaveMap (Map&lt;String, Object&gt;) : void/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>310</x>
+      <y>550</y>
+      <w>370</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Meta File Factory
+--
+/createLevel (Map&lt;String, Object&gt;) : Level/
+/mapLevel (Level) : Map&lt;String, Object&gt;/
+/createSaveData (Map&lt;String, Object&gt;) : SaveData/
+/mapSaveData (SaveData) : Map&lt;String, Object&gt;/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>330</x>
+      <y>360</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>450</x>
+      <y>360</y>
+      <w>30</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;190.0</additional_attributes>
+  </element>
+</diagram>
