@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 import static org.junit.Assert.*;
 
 import phoenix.gameplay.BasicElement;
-import javax.swing.DebugGraphics;
+import phoenix.gameplay.enemies.*;
 
 @RunWith(Parameterized.class)
 public class BasicElementTest {
@@ -22,7 +22,7 @@ public class BasicElementTest {
    @Parameterized.Parameters
    public static Collection testObjects() {
       return Arrays.asList(new Object[][] {
-         { new Object() }
+         { new BasicEnemy(4, 5) }
       });
    }
 
